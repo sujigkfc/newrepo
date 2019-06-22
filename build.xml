@@ -1,0 +1,14 @@
+<project name="test" default="run">
+	<target name="clean">
+		<echo> hello from clean</echo>
+	</target>
+	<target name="compile" depends="clean">
+		<echo>hello from compile</echo>
+	</target>
+	<target name="package" depends="compile">
+		<echo>hello from package</echo>
+	</target>
+	<target name="run" depends="package">
+		<echo>hello from run</echo>
+	</target>
+</project>
